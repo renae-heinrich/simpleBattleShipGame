@@ -43,9 +43,7 @@ public class Main {
         SimpleBattleShip game = new SimpleBattleShip();
 
         //compute a random number between 0 and 4 that will be the starting location cell position
-        int min = 0;
-        int max = 4;
-        int randomNumber = min + (int) (Math.random() * max);
+        int randomNumber = (int) (Math.random() * 5);
 
         //MAKE an int array with 3 ints using the randomly generated number, that number incremented by 1, and that number incremented by 2.
         int[] battleShip = {randomNumber, randomNumber + 1, randomNumber + 2};
